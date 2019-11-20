@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "_reset.css";
+
+*{
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #19202a;
+}
+
+header{
+    position: absolute;
+    z-index: 3; /*get rid of this for a cool blur effect on header*/
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 50px;
+}
+header .logo img{
+    width: 100%;
+}
+
+header nav{
+    align-self: center;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 0 10px;
+}
+
+
+
+
+
+#top-section{
+    position: relative;
+    height: 100vh;
+}
+
+#top-section .bluredbg{
+    background-image:linear-gradient(45deg, rgba(25,32,42,1) 0%,rgba(176,38,183,0.34) 66%,rgba(125,185,232,0) 100%), url('../img/top.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    filter: blur(50px);
+    position: absolute;
+    z-index: 1;
+}
+
+#top-section .floating-img{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#top-section .tekashi-img{
+    width: 25%;
+}
+#top-section .tekashi-img img{
+    width: 100%;
+}
+
+
+
+#bio{
+    display: flex;
+    padding: 100px 300px;
+    background: black;
+    position: relative;
+    z-index: 3;
+}
+
+#bio p{
+    width: 50%;
+    color: white;
+    line-height: 1.8;
+    font-size: .9rem;
+}
+
+#bio .logo-centered{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#media{
+    padding: 100px 0px;
+    background-image: url('../img/bandana.jpeg');
+    background-size: cover;
+}
+#media .title {
+    background: black;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: white;
+}
+#media .videos{
+    padding: 80px 300px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 50px;
+}
+#media .videos .video{
+    border-radius: 4px;
+    overflow: hidden;
+    height: 300px;
+    -webkit-box-shadow: 0px 13px 24px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 24px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 24px -8px rgba(0,0,0,0.75);  
+}
+#media .videos .video iframe{
+    height: 100%;
+}
+
+
+
+#music {
+position: relative;
+position: relative;
+}
+
+#music .bluredbg{
+background-image:linear-gradient(45deg, rgba(255,253,60,1) 0%,rgba(255,253,60,0.34) 66%,rgba(125,185,232,0) 100%), url('../img/top.jpg');
+background-size: cover;
+height: 100%;
+width: 100%;
+filter: blur(50px);
+position: absolute;
+z-index: 1;
+}
+
+#music .container{
+    display: flex;
+    padding-top: 80px;
+    position: relative;
+    z-index: 3;
+    
+}
+
+#music .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#music .info .singles{
+    width: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 80px;
+}
+
+#music .info .logos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+#music ul li{
+    margin-bottom: 20px;
+}
+
+
+#music .info .title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#music .info .sub-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#music .album-cover{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#music .album-cover img{
+    width: 400px;
+    height: 400px;
+}
+
+
+
+#tour{
+    background: black;
+    position: relative;
+    z-index: 4;
+}
+
+#tour .top-image{
+    background-image: url('../img/group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: saturate(0%) contrast(150%);
+    height: 450px;
+}
+
+#tour .tourdates{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+#tour .tourdates .title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 0 80px;
+}
+#tour .tourdates .dates{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+#tour .tourdates .dates li{
+    font-size: 1.3rem;
+    color: white;
+}
+#tour .tourdates .dates li span{
+    padding: 0 20px;
+}
+#tour .tourdates .dates li .city{
+    font-weight: 700;
+}
+#tour .tourdates .dates li .location{
+    font-weight: 300;
+    font-size: 1rem;
+}
+#tour .tourdates .dates li .date{
+    font-weight: 500;
+    color: #f14848;
+}
+
+
+.footer{
+    background: #1b1b1b;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+}
+
+.footer img{
+    max-width: 100px;
+    padding: 25px;
+    text-align: center;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
